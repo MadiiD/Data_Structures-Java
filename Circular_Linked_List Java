@@ -1,0 +1,44 @@
+
+public class CircularList {
+Node head;
+Node tail;
+
+public boolean  isEmpty(){
+	return head==null;
+	
+}
+
+public  void insertFirst(int value){
+	Node newNode= new Node(value);
+	newNode.value=value;
+ 
+if (isEmpty()){
+	tail=newNode;
+}
+	newNode.next=head;
+	newNode=head;
+}
+	
+	public void insertLast(int value){
+		Node newNode=new Node(value);
+		newNode.value= value;
+	
+	if ( isEmpty()){
+		head= newNode;
+	}else{ 
+		tail.next=newNode;
+		 tail=newNode;		
+}
+}
+	public int deleteFirst(){
+		int temp = head.value;
+		
+		if ( head==null){
+			tail=null;
+		}
+		head.next=head;
+		return temp;
+		
+		}
+	}
+
