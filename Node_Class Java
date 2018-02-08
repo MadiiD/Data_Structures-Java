@@ -1,0 +1,19 @@
+
+public class Node {
+	
+	
+	public String name;
+	public Node next;
+	
+	
+ Node ( ){ 
+	 next=null; 
+ } 
+ 
+
+	Node(String name) {
+		this.name = name;
+		this.next = null;
+	}
+}
+
